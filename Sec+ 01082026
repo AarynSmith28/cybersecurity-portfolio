@@ -1,0 +1,73 @@
+# Information Security (InfoSec) — Core Concepts
+
+This repository reflects my foundational understanding of Information Security (InfoSec) and how security principles are applied to protect data, systems, and organizations.
+
+## What Is Information Security?
+Information Security (InfoSec) focuses on protecting information so it remains:
+- **Confidential** — accessible only to authorized users  
+- **Integrity-Protected** — accurate and unaltered  
+- **Available** — accessible when needed  
+
+In simple terms, InfoSec is about preventing unauthorized access, tampering, or disruption of data and systems.
+
+## The CIA Triad
+The CIA Triad is the foundation of all security decision-making:
+
+- **Confidentiality**  
+  Enforced through access controls, encryption, and authentication to prevent unauthorized disclosure.
+
+- **Integrity**  
+  Maintained using checksums, digital signatures, hashing, and version control to prevent unauthorized changes.
+
+- **Availability**  
+  Ensured through redundancy, backups, monitoring, and disaster recovery planning.
+
+## Non-Repudiation
+Non-repudiation ensures accountability by preventing individuals from denying actions they performed.  
+This is achieved through mechanisms such as digital signatures, audit logs, and encryption.
+
+## Security Controls & Risk Mitigation
+Security controls act as safeguards to reduce risk and are categorized by function:
+
+- **Directive** — guide behavior (policies, standards)  
+- **Deterrent** — discourage misuse (warning banners, monitoring)  
+- **Compensating** — alternative controls when primary ones are not feasible  
+- **Physical** — protect real-world assets (locks, cameras, badge access)
+
+## Security Control Domains
+Effective security relies on multiple control domains working together:
+
+- **Technical** — firewalls, MFA, encryption, antivirus  
+- **Managerial** — policies, governance, risk assessments  
+- **Operational** — incident response, procedures, backups  
+- **Physical** — facility and hardware protection  
+- **Administrative** — people- and process-based controls
+
+## Vulnerabilities, Threats, and Risk
+- **Vulnerability** — a weakness in a system (e.g., outdated software, weak passwords)  
+- **Threat** — anything that can exploit a vulnerability (e.g., attackers, malware, disasters)  
+- **Risk** — the likelihood and impact of a threat exploiting a vulnerability  
+
+Risk prioritization is based on both probability and business impact.
+
+## Gap Analysis
+Gap analysis identifies missing or insufficient security controls:
+
+1. **Current State** — existing controls  
+2. **Required State** — controls needed based on policies or frameworks  
+3. **Gap** — what is missing or weak  
+
+Frameworks such as **CIS Controls** or **CMMI** are commonly used to define baselines.
+
+## AAA Framework
+The AAA framework explains how access and accountability are managed:
+
+- **Authentication** — verifies identity  
+- **Authorization** — defines permitted actions  
+- **Accounting** — logs and tracks user activity  
+
+Authorization models and abstractions help reduce complexity and clearly map users to resources.
+
+## Key Takeaway
+Information Security is about managing risk—not just deploying tools.  
+Strong security aligns **people, processes, and technology** to protect data while enabling business operations.
