@@ -1,0 +1,42 @@
+## 1. SSH vs TLS
+
+| Feature        | SSH (Secure Shell)                 | TLS (Transport Layer Security)        |
+|----------------|----------------------------------|--------------------------------------|
+| **Purpose**    | Remote access to systems          | Secure browser/server communication |
+| **Encryption** | Asymmetric (public/private keys) | Asymmetric (public/private keys)    |
+| **Security**   | Authentication & confidentiality  | Encryption & integrity               |
+| **Typical Use**| Logging into servers, remote management | HTTPS websites, secure data transmission |
+
+Both rely on asymmetric encryption. SSH is for system management; TLS protects web traffic.
+
+
+## 2. Subjects vs Objects
+
+- **Subject:** The active entity (user, group, or process) requesting access.  
+- **Object:** Any resource or asset being accessed (file, database, application).
+
+**Example:**  
+A user (subject) reads a confidential file (object).
+
+
+## 3. Permissions vs Rights
+
+| Concept      | Definition                               | Example                                      |
+|--------------|------------------------------------------|----------------------------------------------|
+| **Permissions** | Control the ability to read, write, or execute a resource | File ACL allowing read/write for a user    |
+| **Rights**      | Allow a subject to perform specific system-level actions | Ability to shut down a computer or install software |
+
+ Permissions are resource-specific; rights are broader system-level privileges.
+
+
+## 4. Explicit vs Implicit Access
+
+- **Explicit:** Directly granted permissions.  
+- **Implicit:** Inferred or assumed permissions (e.g., via group membership or defaults).
+
+**Example:**  
+- Explicit: User “Alice” has read access to File A.  
+- Implicit: User “Alice” is in group “Staff” that has read access to File A.
+
+
+
