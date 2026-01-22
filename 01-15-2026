@@ -1,0 +1,74 @@
+# Cybersecurity Access & Authentication
+
+---
+
+## 1. Federation & Identity Management
+
+Federation allows **separate organizations to trust each other**, letting users log in once and access systems across multiple domains.  
+
+### Key Components
+
+| Component | Description | Example |
+|-----------|------------|---------|
+| **Principal** | The user or entity trying to access a resource | You, as the user |
+| **Identity Provider (IdP)** | Verifies identity and issues credentials | Google, corporate login |
+| **Service Provider (SP)** | Trusts the IdP and provides access | Zoom, AWS, a SaaS app |
+
+**Flow:**  
+1. Principal proves identity to IdP  
+2. IdP issues proof of identity  
+3. SP trusts IdP and grants access  
+
+---
+
+## 2. Federation Protocols
+
+| Protocol | Purpose | Notes |
+|----------|---------|------|
+| **SAML (Security Assertion Markup Language)** | Single Sign-On (SSO) in federated environments | XML-based, widely used in corporate SSO |
+| **Kerberos** | Local network authentication | Ticket-based system for land-based networks |
+| **OAuth** | Allows apps to access user resources without passwords | Ideal for third-party app integrations |
+| **OpenID Connect (OIDC)** | Extends OAuth with authentication and identity | Secure login using external accounts (Google, Microsoft) |
+
+**Key Takeaway:** Choosing the right protocol balances **security, usability, and compliance** across systems.
+
+---
+
+## 3. Access Methods & Agents
+
+| Concept | Description |
+|---------|------------|
+| **Passive vs Active** | Passive monitors without interaction; Active can interact with the network |
+| **Agent vs Agentless** | Agent requires software on the device; Agentless queries devices remotely |
+| **Credential vs Credential-less** | Credential-based uses passwords/tokens; Credential-less uses certificate or device authentication |
+
+---
+
+## 4. Network Monitoring & Traffic
+
+| Tool | Description |
+|------|------------|
+| **TAP (Test Access Point)** | Captures **all traffic** on a network segment |
+| **SPAN (Switch Port Analyzer)** | Mirrors traffic from one port to another for analysis |
+
+**Tip:** TAPs are passive and do not impact network traffic; SPAN ports can affect switch performance.
+
+---
+
+## 5. Firewalls & Packet Filtering
+
+| Type | Description |
+|------|------------|
+| **Packet Filtering** | Basic firewall filtering packets based on IP, port, protocol |
+| **Stateless** | Treats each packet independently; does not track session state |
+| **Stateful** | Tracks connection state; makes context-aware decisions |
+
+---
+
+## 6. Summary
+
+- **Federation:** Users can log in once and access multiple systems securely.  
+- **Protocols:** SAML, OAuth, OIDC, Kerberos each serve different authentication/authorization needs.  
+- **Access Methods:** Passive/active, agent/agentless, credentialed/credential-less approaches.  
+- **Network Monitoring:** TAP and SPAN enable traffic capture for security analysis.  
+- **Firewalls:** Stateless vs stateful packet filtering for network protection.  
