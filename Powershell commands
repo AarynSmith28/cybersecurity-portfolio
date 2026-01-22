@@ -1,0 +1,16 @@
+#PowerShell Commands 
+
+##  1. Navigating Directories
+
+| Command | Description |
+|---------|------------|
+| `cd <directory>` | Change into a specific directory |
+| `pwd` | Show current directory |
+| `ls` or `Get-ChildItem` | List the contents of the current directory |
+
+**Example:**
+
+```powershell
+cd C:\LABFILES\PolicyAnalyzer
+pwd
+ls
