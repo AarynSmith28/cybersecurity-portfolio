@@ -1,0 +1,49 @@
+#Nmap Cheat Sheet for Cybersecurity
+
+## 1. Common Nmap Scan Parameters
+
+| Parameter        | Description                                                      |
+| ---------------- | ---------------------------------------------------------------- |
+| `-F`             | Scan only the top 100 most popular ports                         |
+| `-sS`            | SYN scan (default, reliable scan type)                           |
+| `-sV`            | Version scan to identify services on open ports                  |
+| `-O`             | Attempt to detect the operating system                           |
+| `-Pn`            | Disable host discovery; assumes all hosts are up                 |
+| `-oN <filename>` | Save output to a file in normal format (also displays on screen) |
+
+**Example Nmap Command:**
+
+```bash
+nmap -F -sS -sV -O -Pn -oN border-scan.nmap 192.168.1.1
+```
+
+This command scans the top 100 ports of the target, identifies open ports, versions, OS, and saves the output to `border-scan.nmap`.
+
+---
+
+## 2. Viewing Scan Results
+
+| Command                      | Description                                           |
+| ---------------------------- | ----------------------------------------------------- |
+| `grep open border-scan.nmap` | View only open ports from the saved scan file         |
+| `grep OS border-scan.nmap`   | Display OS detection results from the saved scan file |
+
+**Example:**
+
+```bash
+grep open border-scan.nmap
+grep OS border-scan.nmap
+```
+
+> Tip: Combining these parameters allows you to perform **quick, efficient, and detailed reconnaissance** on network targets, essential for cybersecurity assessments and penetration testing.
+
+---
+
+## Summary
+
+This cheat sheet covers:
+
+* Nmap scanning options for ports, services, and OS detection
+* Saving scan results for later analysis
+* Filtering scan outputs to quickly find open ports or OS info
+
