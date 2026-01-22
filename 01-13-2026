@@ -1,0 +1,63 @@
+# Cybersecurity Access Control & Authentication 
+
+A quick reference for access control, authentication, and authorization concepts in cybersecurity. Perfect for portfolios, interviews, and recruiters.
+
+---
+
+## 1. Access Control Models
+
+| Model | Description | Key Concept |
+|-------|------------|-------------|
+| **RBAC (Role-Based Access Control)** | Grants access based on a user’s role | Who you are |
+| **ABAC (Attribute-Based Access Control)** | Grants access based on attributes & policies (role, time, location, etc.) | Context + details |
+| **Rule-Based Access Control** | Grants or denies access based on IF-THEN rules | Conditional logic |
+| **DAC (Discretionary Access Control)** | Resource owner decides who gets access | Owner-controlled |
+| **MAC (Mandatory Access Control)** | Access controlled by strict rules set by an authority | Authority-controlled |
+
+**Key Takeaway:** Access control determines **who can access what, when, and under what conditions**, preventing breaches and protecting sensitive data.
+
+---
+
+## 2. Access Control Tools & Concepts
+
+- **Access Control List (ACL):** Specifies **permit or deny** rules for subjects accessing objects.  
+- **Discretionary vs Non-Discretionary:**  
+  - Discretionary: Owner-controlled (e.g., sharing a file)  
+  - Non-Discretionary: System-controlled (e.g., RBAC, MAC)
+
+---
+
+## 3. Authentication vs Authorization
+
+| Concept | Definition | Examples |
+|---------|------------|---------|
+| **Identity** | A claim of who you are | Username, email |
+| **Authentication** | Proving identity | Something you know (password), have (token), are (biometrics), or somewhere you are (location) |
+| **Authorization** | Determining rights & permissions | Read/write access, admin rights |
+
+---
+
+## 4. Common Authentication Services
+
+| Service | Notes |
+|---------|-------|
+| **RADIUS** | Centralized network authentication |
+| **TACACS+** | AAA protocol for device administration |
+| **Kerberos** | Ticket-based authentication (SSO, local networks) |
+| **LDAP** | Directory services based on X.500 standard |
+| **Active Directory** | Microsoft directory service for identity management |
+| **Single Sign-On (SSO)** | One login for multiple systems |
+
+---
+
+## 5. Summary
+
+- **RBAC:** Who you are → Role determines access  
+- **ABAC:** Context matters → Attributes + policies  
+- **Rule-Based:** IF-THEN conditions control access  
+- **DAC vs MAC:** Owner-controlled vs Authority-controlled  
+- **Authentication:** Prove identity  
+- **Authorization:** Determine what actions are allowed  
+
+> These models and services together ensure secure, controlled, and auditable access across systems and networks.
+
