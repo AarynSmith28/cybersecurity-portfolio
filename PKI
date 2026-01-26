@@ -1,0 +1,92 @@
+# Public Key Infrastructure (PKI)
+
+## Overview
+
+Public Key Infrastructure (PKI) is a core cybersecurity framework used to establish trust, verify identities, and protect data across untrusted networks such as the internet. It underpins many enterprise security controls and is fundamental to technologies like HTTPS, VPNs, and secure authentication.
+
+
+## Core PKI Concepts 
+
+### Asymmetric Cryptography
+
+PKI is built on asymmetric cryptography, which uses two mathematically linked keys:
+
+* **Public Key** – Shared openly; used to encrypt data or verify digital signatures
+* **Private Key** – Kept secret; used to decrypt data or create digital signatures
+
+This key separation enables secure communication without pre-sharing secrets.
+
+---
+
+### Digital Certificates
+
+A digital certificate binds a **public key** to a verified identity (user, server, or organization). Certificates allow systems to trust that a public key belongs to who it claims to represent.
+
+Certificates contain:
+
+* Public key
+* Identity information (domain, organization, or individual)
+* Validity period
+* Digital signature of a trusted Certificate Authority (CA)
+
+---
+
+### Certificate Authorities (CAs)
+
+Certificate Authorities are trusted entities that establish and maintain trust within PKI by:
+
+* Verifying identities
+* Issuing and managing certificates
+* Digitally signing certificates
+
+Public CAs (e.g., DigiCert, Let’s Encrypt) support internet-facing systems, while private CAs are commonly used within enterprise environments.
+
+---
+
+## Security Services Enabled by PKI
+
+PKI provides essential security guarantees:
+
+* **Confidentiality** – Data is encrypted and protected from unauthorized access
+* **Authentication** – Identities of users, devices, and servers are verified
+* **Integrity** – Data tampering can be detected
+* **Non-repudiation** – Actions cannot be credibly denied
+
+---
+
+## Real-World IT Scenario: Secure Healthcare Web Application
+
+In a healthcare environment, PKI is critical for protecting sensitive patient data and meeting regulatory requirements such as HIPAA.
+
+**Scenario:**
+A hospital deploys a public-facing patient portal. To secure communications, the web server uses HTTPS with TLS.
+
+**PKI in Action:**
+
+1. A trusted Certificate Authority issues a digital certificate to the hospital’s web server.
+2. The certificate links the server’s public key to the hospital’s verified identity.
+3. A patient’s browser validates the certificate during connection.
+4. A TLS session is established, encrypting all data in transit.
+
+**Outcome:**
+
+* Users can trust they are connected to a legitimate hospital system
+* Patient data is encrypted during transmission
+* Data integrity and confidentiality are preserved
+
+---
+
+## Why PKI Matters in Enterprise Security
+
+PKI is foundational to secure enterprise operations, enabling:
+
+* Secure web traffic (HTTPS)
+* Encrypted remote access (VPNs)
+* Strong authentication mechanisms
+* Compliance with security and privacy regulations
+
+---
+
+## Summary
+
+This repository reflects a practical, security-focused understanding of Public Key Infrastructure and its role in real-world IT environments. PKI remains a cornerstone of modern cybersecurity and enterprise trust models.
